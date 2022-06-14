@@ -1,13 +1,14 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-import {Route, Router, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       {fetch(
   `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`
-  .then()
+  .then((response) => response.json())
+  .then((data) => console.log(data) )
 )}
     </div>
   );
