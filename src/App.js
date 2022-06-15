@@ -6,15 +6,19 @@ import {
   Route,
   Link
 } from "react-router-dom"
+import YouTube from 'react-youtube';
+import { getAPI } from '/Users/jcarrera/Desktop/WeTub/src/Api/Fetch.js'
+
+
+
+getAPI()
+.then((data) => console.log(data))
 
 function App() {
   return (
     <div className="App">
-      {fetch(
-  `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`
-  .then((response) => response.json())
-  .then((data) => console.log(data) )
-)}
+      <p>Hello</p>
+
     </div>
   );
 }
