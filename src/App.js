@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -12,17 +12,20 @@ import Home from './Components/Home';
 import About from './Components/About';
 
 
-const allVideos = fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`).then(response => response.json());
-
-console.log(allVideos)
-
-
 
 
 function App() {
+  useEffect (() => {
+    const allVideos = fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${input}&type=video&key=${process.env.REACT_APP_API_KEY}`).then(response => response.json());
+    console.log(allVideos)
+  })  
+
+
+  const [input, setInput] = useState('')
+  
   return (
   <div>
-<Router>
+  <Router>
     <Nav />
     <Routes>
       <Route path="/" element={<Home />} />
