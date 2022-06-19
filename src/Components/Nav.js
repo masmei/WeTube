@@ -1,11 +1,11 @@
 import {Link }from 'react-router-dom';
-import React, { Children } from 'react'
+import React from 'react'
 
 export default function Nav() {
   
   return( 
     <nav className='nav'>
-      <a href="/" className="home">WeTube</a>
+      <Link to="/" className="home">WeTube</Link>
       <ul>
       <Link to="/"> Home</Link>
         <Link to="/about"> About </Link>
