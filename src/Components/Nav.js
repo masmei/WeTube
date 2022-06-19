@@ -5,26 +5,16 @@ export default function Nav() {
   
   return( 
     <nav className='nav'>
-      <a href="/" className="home">Home</a>
+      <a href="/" className="home">WeTube</a>
       <ul>
-        <CustomLink href="/home">Home</CustomLink>
-        <CustomLink href="/about">About</CustomLink>
+      <Link to="/"> Home</Link>
+        <Link to="/about"> About </Link>
       </ul>
     </nav>
   )
 }
 
-function CustomLink({href,children, ...props}) {
-  const path = window.location.pathname
-  
-  return (
-    <li className={path === href ? "active" : ""}>
-      <a href={href} {...props}>{children}</a>
-    </li>
-  )
-}
  
-
 
 
 
