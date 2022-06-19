@@ -22,7 +22,13 @@ export default function Home({videos,setVideos}) {
   }, []);
 
   return (
-    <div>Home
+    <div>
+      <section>
+        <form>
+          <input value={input}/>
+          <button>Search</button>
+        </form>
+      </section>
       {console.log(videos)}
       <ul>
       {videos.map((video) => {
