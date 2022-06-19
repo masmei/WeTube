@@ -16,9 +16,19 @@ import About from './Components/About';
 
 function App() {
   useEffect (() => {
-    const allVideos = fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${input}&type=video&key=${process.env.REACT_APP_API_KEY}`).then(response => response.json());
+    // const allVideos = fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${input}&type=video&key=${process.env.REACT_APP_API_KEY}`).then(response => response.json());
     console.log(allVideos)
-  })  
+
+    
+    }
+  //   return (
+  //     <>
+  //       <Nav />
+  //       <div className='container'><NavBar /></div>
+  //       <Nav />
+  //     </>
+  //   )
+  // })  
 
 
   const [input, setInput] = useState('')
