@@ -23,6 +23,7 @@ export default function Home({ videos, setVideos }) {
         console.error(error);
         setLoadingError(true);
       });
+
   }, [submit]);
 
   const handleChange = (e) => {
