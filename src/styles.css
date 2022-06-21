@@ -19,6 +19,7 @@
      align-items: stretch;
      gap: 2rem;
      padding: 0 1rem;
+     grid-area: n;
  }
 
  .home {
@@ -50,4 +51,4 @@
      background-color: #777;
  }
 
- export :default styles
+ 

@@ -1,2 +1,13 @@
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "n n n n"
+    "v v v v"
+    "v v v v";
+}
 
-
+.vids {
+    grid-area: v;
+    
+    
+}
