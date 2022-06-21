@@ -1,3 +1,28 @@
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "n n n n"
+    "v v v v"
+    "v v v v";
+}
+
+.vids {
+    grid-area: v;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+    
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.search {
+    text-align: center;
+    margin: 20px;
+}
+
 * {
     box-sizing: border-box;
 }

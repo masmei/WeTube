@@ -9,8 +9,7 @@ export default function Thumbnail({video}) {
 
  return (
     <div>
-        <li> <Link to={`/video/${video.id.videoId}`}><img alt="thumbnails" src={video.snippet.thumbnails.default.url}/> <h3>{video.snippet.title}</h3><p>{video.id.videoId}</p></Link></li> 
-        <p>{video.snippet.description}</p>
+        <li> <Link to={`/video/${video.id.videoId}`}><img alt="thumbnails" src={video.snippet.thumbnails.medium.url}/> <h3>{video.snippet.title}</h3></Link></li>
     </div>
   )
 }
