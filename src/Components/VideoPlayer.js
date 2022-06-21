@@ -36,11 +36,11 @@ export default function VideoPlayer({ videos }) {
   };
 
   return (
-    <div>
+    <div className="video">
       <h2>{show.snippet.title}</h2>
       <YouTube videoId={show.id.videoId} />
       <aside>
-        <button onClick={handleClick} className="backbttn"></button>
+        <button onClick={handleClick} className="backbttn"> Go Back </button>
       </aside>
       <div>
         <form className="form" onSubmit={submitComment}>
@@ -62,7 +62,7 @@ export default function VideoPlayer({ videos }) {
             required
           ></input>
           <input type="submit" className="commentButton" />
-          <ul>
+          <ul className="comments">
             <li>
               <p>{showComments}</p>
             </li>
