@@ -11,15 +11,15 @@ export default function Home({videos,setVideos}) {
   const key = process.env.REACT_APP_API_KEY
   
   useEffect(() => {
-    // fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=${input}&type=video&key=${key}`)
-    // .then((response) => response.json())
-    // .then((data)=>{
-    //   setVideos(data.items)
-    // })
-    // .catch((error) => {
-    //   console.error(error);
-    //   setLoadingError(true);
-    // });
+    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=${input}&type=video&key=${key}`)
+    .then((response) => response.json())
+    .then((data)=>{
+      setVideos(data.items)
+    })
+    .catch((error) => {
+      console.error(error);
+      setLoadingError(true);
+    });
   }, [submit]);
 
   const handleChange = (e) => {
