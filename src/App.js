@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./styles.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import YouTube from "react-youtube";
 import Nav from "./Components/Nav";

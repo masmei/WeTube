@@ -39,6 +39,7 @@ export default function VideoPlayer({ videos }) {
     <div className="video">
       <h2>{show.snippet.title}</h2>
       <YouTube videoId={show.id.videoId} />
+      <p>{show.snippet.description}</p>
       <aside>
         <button onClick={handleClick} className="backbttn"> Go Back </button>
       </aside>
