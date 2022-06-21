@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Error() {
+export default function ErrorPage() {
   return (
       <section classname="error"> 
-          <p>ERROR. NOTHING TO SEE HERE...</p>
+          <p>No Videos Found...</p>
       </section>
   )
 }
