@@ -12,7 +12,7 @@ export default function Home({ videos, setVideos }) {
 
   useEffect(() => {
     fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${input}&type=video&key=${key}`
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=${input}&type=video&key=${key}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -38,7 +38,7 @@ export default function Home({ videos, setVideos }) {
 
   return (
     <div>
-      <section>
+      <section className="search">
         <form onSubmit={handleSubmit}>
           <input value={input} onChange={handleChange} />
           <button>Search</button>
