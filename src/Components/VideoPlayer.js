@@ -38,13 +38,18 @@ export default function VideoPlayer({ videos }) {
   };
 
   return (
-    <div className="video">
+    <div className='videoPlayerDiv'>
       <h2>{show.snippet.title}</h2>
+      <div className="YTvideo">
       <YouTube videoId={show.id.videoId} />
-      <p>{show.snippet.description}</p>
+      </div>
+      <p className="YTvideoDesc">{show.snippet.description}</p>
       <aside>
         <button onClick={handleClick} className="backbttn"> Go Back </button>
       </aside>
+      <br></br>
+      <hr></hr>
+      <h3> COMMENTS </h3>
       <div className='formDiv'>
         <form className="form" onSubmit={submitComment}>
           <label>Name</label>

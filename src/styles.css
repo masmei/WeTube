@@ -75,3 +75,29 @@ body {
   background-color: #777;
 }
 
+hr {
+  border-style: solid;
+  border-width: 1px;
+  min-width: max-content;
+  align-self: stretch;
+  width: 100%;
+}
+
+.videoPlayerDiv {
+  text-align: center;
+  margin-left: 20vh;
+}
+
+.YTvideo {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin-left: 30vh;
+}
+
+.videoPlayerDiv p {
+  margin-left: inherit;
+}
+
