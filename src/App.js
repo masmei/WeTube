@@ -10,14 +10,16 @@ import VideoPlayer from "./Components/VideoPlayer";
 function App() {
 
   const [videos, setVideos] = useState([]);
+  const [submit, setSubmit] = useState(false);
+  const [input, setInput] = useState("");
 
 
   return (
     <div className="grid">
       <Router>
-        <Nav />
+        <Nav setSubmit={setSubmit} setInput={setInput}/>
         <Routes>
-          <Route path="/" element={<Home videos={videos} setVideos={setVideos}/>} />
+          <Route path="/" element={<Home videos={videos} setVideos={setVideos} setSubmit={setSubmit} submit={submit} input={input} setInput={setInput}/>} />
           <Route path="/about" element={<About />} />
           <Route path="/video/:id" element={<VideoPlayer videos={videos}/>}/>
         </Routes>

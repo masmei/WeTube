@@ -1,11 +1,17 @@
 import {Link }from 'react-router-dom';
 import React from 'react'
 
-export default function Nav() {
+export default function Nav({submit, setSubmit, setInput}) {
   
+  const handleClick = (e) => {
+    e.preventDefault()
+    submit ? setSubmit(false) : setSubmit(true);
+    setInput("")
+  };
+
   return( 
     <nav className='nav'>
-      <Link to="/" className="home">WeTube</Link>
+      <Link onClick={handleClick}to="/" className="home">WeTube</Link>
       <ul>
       <Link to="/"> Home</Link>
         <Link to="/about"> About </Link>
