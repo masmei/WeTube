@@ -4,13 +4,18 @@ import YoutubeIcon from "../Icons/YoutubeIcon";
 import HomeIcon from "../Icons/HomeIcon";
 import AboutIcon from "../Icons/AboutIcon";
 
-export default function Nav() {
-  return (
-    <nav className="nav">
-      <Link to="/" className="home">
-        <YoutubeIcon/>
-        WeTube
-      </Link>
+export default function Nav({submit, setSubmit, setInput}) {
+  
+  const handleClick = (e) => {
+    e.preventDefault()
+    submit ? setSubmit(false) : setSubmit(true);
+    setInput("")
+  };
+
+  return( 
+    <nav className='nav'>
+      <Link onClick={handleClick}to="/" className="home">WeTube</Link>
+
       <ul>
         <Link to="/"> <HomeIcon/> </Link>
         <Link to="/about"> <AboutIcon/> </Link>
