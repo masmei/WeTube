@@ -1,9 +1,0 @@
-import React from 'react'
-
-export default function Error() {
-  return (
-      <section classname="error"> 
-          <p>ERROR. NOTHING TO SEE HERE...</p>
-      </section>
-  )
-}

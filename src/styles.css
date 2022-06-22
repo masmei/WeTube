@@ -1,4 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "n n n n"
+    "v v v v"
+    "v v v v";
+}
+
+.vids {
+  grid-area: v;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.search {
+  text-align: center;
+  margin: 20px;
+}
+
 * {
+
     box-sizing: border-box;
 }
 
@@ -52,3 +77,106 @@
  }
 
  export :default styles;
+=======
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+}
+
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+.nav {
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+  grid-area: n;
+}
+
+.home {
+  font-size: 2rem;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.nav li.active {
+  background-color: #555;
+}
+
+.nav li:hover {
+  background-color: #777;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px;
+  min-width: max-content;
+  align-self: stretch;
+  width: 100%;
+}
+
+.videoPlayerDiv {
+  text-align: center;
+  margin-left: 20vh;
+}
+
+.YTvideo {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin-left: 30vh;
+}
+
+.videoPlayerDiv p {
+  margin-left: inherit;
+}
+
+
+ .modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modalContainer {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    text-align: center;
+  }
+
+
