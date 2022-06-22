@@ -20,6 +20,8 @@ export default function VideoPlayer({ videos }) {
         { name: `${name}`, comment: `${comment}` },
       ]);
     }
+    setComment('')
+    setName('')
   };
 
   const showComments = comments.map((entry, i) => {
@@ -36,14 +38,14 @@ export default function VideoPlayer({ videos }) {
   };
 
   return (
-    <div>
+    <div className="video">
       <h2>{show.snippet.title}</h2>
       <YouTube videoId={show.id.videoId} />
       <p>{show.snippet.description}</p>
       <aside>
-        <button onClick={handleClick} className="backbttn"></button>
+        <button onClick={handleClick} className="backbttn"> Go Back </button>
       </aside>
-      <div>
+      <div className='formDiv'>
         <form className="form" onSubmit={submitComment}>
           <label>Name</label>
           <input
@@ -63,7 +65,7 @@ export default function VideoPlayer({ videos }) {
             required
           ></input>
           <input type="submit" className="commentButton" />
-          <ul>
+          <ul className="comments">
             <li>
               <p>{showComments}</p>
             </li>
