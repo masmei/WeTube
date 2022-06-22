@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import YouTube from "react-youtube";
-import ErrorPage from "./ErrorPage";
 import Modal from "./Modal";
 import Thumbnail from "./Thumbnail";
 import Search from "../Icons/Search";
@@ -47,7 +46,7 @@ export default function Home({ videos, setVideos, submit, setSubmit, input, setI
         </form>
       </section>
       {loadingError? (
-        <Modal closeModal={setLoadingError}/>
+        <Modal closeModal={setLoadingError} submit={submit} setSubmit={setSubmit} setInput={setInput}/>
       ) : (
         <ul className="vids">
           {videos.map((video) => {
