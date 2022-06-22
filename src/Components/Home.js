@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import YouTube from "react-youtube";
 import ErrorPage from "./ErrorPage";
-
 import Thumbnail from "./Thumbnail";
+import Search from "../Icons/Search";
 
 export default function Home({ videos, setVideos }) {
   const [loadingError, setLoadingError] = useState(false);
@@ -41,7 +41,7 @@ export default function Home({ videos, setVideos }) {
       <section className="search">
         <form onSubmit={handleSubmit}>
           <input value={input} onChange={handleChange} />
-          <button>Search</button>
+          <button><Search/></button>
         </form>
       </section>
       {loadingError || videos.length < 1 ? (

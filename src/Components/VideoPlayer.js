@@ -20,6 +20,8 @@ export default function VideoPlayer({ videos }) {
         { name: `${name}`, comment: `${comment}` },
       ]);
     }
+    setComment('')
+    setName('')
   };
 
   const showComments = comments.map((entry, i) => {
@@ -43,7 +45,7 @@ export default function VideoPlayer({ videos }) {
       <aside>
         <button onClick={handleClick} className="backbttn"> Go Back </button>
       </aside>
-      <div>
+      <div className='formDiv'>
         <form className="form" onSubmit={submitComment}>
           <label>Name</label>
           <input
