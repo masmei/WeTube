@@ -13,6 +13,7 @@
 
  .nav {
      background-color: black;
+     text-shadow: 2px 2px #b76e79;
      color: aliceblue;
      display: flex;
      justify-content: space-between;
