@@ -13,7 +13,6 @@ function App() {
   const [submit, setSubmit] = useState(false);
   const [input, setInput] = useState("");
 
-
   return (
     <div className="grid">
       <Router>

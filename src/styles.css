@@ -1,80 +1,79 @@
 .grid {
-    display: grid;
-    grid-template-areas: 
+  display: grid;
+  grid-template-areas:
     "n n n n"
     "v v v v"
     "v v v v";
 }
 
 .vids {
-    grid-area: v;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr)
-    
+  grid-area: v;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 li {
-    list-style-type: none;
-    text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
 
 .search {
-    text-align: center;
-    margin: 20px;
+  text-align: center;
+  margin: 20px;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
- body {
-     margin: 0%;
- }
-
- .container {
-     margin: 1rem;
-     text-align: center;
- }
-
- .nav {
-     background-color: black;
-     color: aliceblue;
-     display: flex;
-     justify-content: space-between;
-     align-items: stretch;
-     gap: 2rem;
-     padding: 0 1rem;
-     grid-area: n;
- }
-
- .home {
-     font-size: 2rem;
- }
-
- .nav ul {
-     padding: 0;
-     margin: 0;
-     list-style: none;
-     display: flex;
-     gap: 1rem;
- }
-
- .nav a {
-     color: inherit;
-     text-decoration: none;
-     height: 90%;
-     display: flex;
-     align-items: center;
-     padding: .20rem;
- }
-
- .nav li.active {
-    background-color: #555;
+body {
+  margin: 0%;
 }
 
- .nav li:hover {
-     background-color: #777;
- }
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+.nav {
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+  grid-area: n;
+}
+
+.home {
+  font-size: 2rem;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.nav li.active {
+  background-color: #555;
+}
+
+.nav li:hover {
+  background-color: #777;
+}
 
  .modalBackground {
     width: 100vw;
@@ -97,4 +96,4 @@ li {
     padding: 25px;
     text-align: center;
   }
-  
+
