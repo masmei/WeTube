@@ -14,7 +14,9 @@ export default function Nav({submit, setSubmit, setInput}) {
 
   return( 
     <nav className='nav'>
-      <Link toonClick={handleClick} to="/" className="home">WeTube</Link>
+      <Link onClick={handleClick}to="/" className="home">
+        <YoutubeIcon/>
+        WeTube</Link>
 
       <ul>
         <Link to="/"> <HomeIcon/> </Link>
