@@ -1,3 +1,7 @@
+h1 {
+    text-align: center;
+}
+
 .description p {
     display: flex;
     justify-content: center;
@@ -66,15 +70,11 @@
     border: 20px;
   }
 
+  .githubIcon {
+    display: grid;
+  }
   
-#purple {
-    color: purple;
-}
+  #icon {
+    color: Black;
 
-#red {
-    color: red;
-}
-
-#blue {
-    color: blue;
-}
+} 
