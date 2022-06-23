@@ -6,6 +6,7 @@ import Nav from "./Components/Nav";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import VideoPlayer from "./Components/VideoPlayer";
+import Modal from "./Components/Modal";
 
 function App() {
 
