@@ -1,26 +1,14 @@
-import React from 'react'
-import Aisha from "./Images/Aisha_Kleemoff.jpeg"
-import Jorge from "./Images/Jorge_Carrera.jpeg"
-import Mason from "./Images/Mason_Mei.jpeg"
-import Jahvon from "./Images/Jahvon_DeVine-Jones.jpeg"
-
-const RevealInfo = (e) => {
-  let x = document.getElementsByClassName("info1");
-  let i;
-  for (i = 0; i < x.length; i++) {
-    if (x[i].style.display === "none") {
-      x[i].style.display = "inline";
-      document.getElementById("button").innerHTML = "Hide!";
-    } else {
-      x[i].style.display = "none";
-      document.getElementById("button").innerHTML = "Reveal!";
-    }
-  }
-};
+import React from 'react';
+import "./About.css";
+import Aisha from "./Images/Aisha_Kleemoff.jpeg";
+import Jorge from "./Images/Jorge_Carrera.jpeg";
+import Mason from "./Images/Mason_Mei.jpeg";
+import Jahvon from "./Images/Jahvon_DeVine-Jones.jpeg";
 
 export default function About() {
   return (
     <section className="aboutContainer">
+       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg>
       <h1>About Us</h1>
       <div className="description">
         <h3> Project Description </h3>
@@ -31,27 +19,16 @@ export default function About() {
           the project description.
         </p>
       </div>
-      <ul>
+      <ul className= "cards">
+        <section className='row1'>  
+
         <li className="card">
           <h3>Aisha Kleemoff</h3>
           <img src={Aisha} alt="Aisha" height="300px" />
           <a href="https://github.com/AishaCKleemoff">
             <i class="devicon-github-original-wordmark colored" id="blue" />
           </a>
-          <p>
-            Software engineer with an unquenchable curiosity to learn. Hobbies
-            includes drawing, watching movies, and gaming. I am passionate about
-            sharing ideas and stories through the utilization of gaming,
-            illustrations and other media technologies
-          </p>
-          <p className="info1">
-            According to my screen time daily average, I spend 2hrs a day on
-            Youtube. During that time, I enjoy watching walkthroughs of scary
-            games
-            <img
-              src="https://media.tenor.com/images/7bdca2f9b0804aa3c9418d72c89bf8d1/tenor.gif"
-              alt="vampirelady"
-            />
+          <p> I'm a React Developer. I enjoy collaborating on projects with other Developers. I'm currently learning the PERN full-stack at the Pursuit Fellowship program located in Long Island City, NY (fully remote now due to the Covid-19 pandemic). I'm looking forward to learning new programming languages.
           </p>
         </li>
         <li className="card">
@@ -61,21 +38,12 @@ export default function About() {
             <i class="devicon-github-original-wordmark colored" id="red" />
           </a>
           <p>
-            Software engineer in the making with a passion for utilizing data to
-            tell stories in immigrant justice spaces. Hobbies include community
-            organizing, knitting, and binge watching Parks and Recs.
+          A developing Full-Stack engineer looking to advance the growth in technology that connects us worldwide. Eager to contribute to the development of Web3, blockchain, and the future of the internet, though only when the football season is over.
           </p>
-          <div className="info1">
-            <p>
-              My favorite part of Youtube is honestly the RickRolld' videos.
-              Rick Astley is forever a legend.
-            </p>
-            <img
-              src="https://media4.giphy.com/media/Ju7l5y9osyymQ/200.gif"
-              alt="You just got Rick Rolld!"
-            />
-          </div>
         </li>
+        </section>
+        <section className="row2"> 
+        
         <li className="card">
           <h3>Mason Mei</h3>
           <img src={Mason} alt="Mason" height="300px"/>
@@ -83,16 +51,7 @@ export default function About() {
             <i class="devicon-github-original-wordmark colored" id="purple" />
           </a>
           <p>
-            Software engineer with a passion for robotics and AI. My hobbies
-            include playing games, doing sudoku puzzles, and taking care of my
-            cat Binx.
-          </p>
-          <p className="info1">
-            I enjoy using youtube to watch people play games.
-            <img
-              src="https://media.tenor.com/images/ac6f92d52f856922881c00fee3651c4f/tenor.gif"
-              alt="DashieGames"
-            />
+          I'm a Software Engineer who is passionate in Web3 and Entrepreneurship. I started my tech journey in 2021 due to my obsession with blockchain technology. I want to be a builder in this new age and contribute to the growth and adoption of this new disruptive technology.
           </p>
         </li>
         <li className="card">
@@ -102,22 +61,11 @@ export default function About() {
             <i class="devicon-github-original-wordmark colored" id="purple" />
           </a>
           <p>
-            Software engineer with a passion for robotics and AI. My hobbies
-            include playing games, doing sudoku puzzles, and taking care of my
-            cat Binx.
-          </p>
-          <p className="info1">
-            I enjoy using youtube to watch people play games.
-            <img
-              src="https://media.tenor.com/images/ac6f92d52f856922881c00fee3651c4f/tenor.gif"
-              alt="DashieGames"
-            />
+            I'm an fledgling Software Engineer looking to contribute however I can to improve the technology in the world we live in. I want to be able to help those in need and give back to those whow deserve it. Making the world a better place to live in through code!
           </p>
         </li>
+        </section>
       </ul>
-      <button onClick={RevealInfo} id="button">
-        Reveal!
-      </button>
     </section>
   );
 };
