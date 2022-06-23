@@ -4,8 +4,7 @@ import Modal from "./Modal";
 import Thumbnail from "./Thumbnail";
 import Search from "../Icons/Search";
 
-export default function Home({ videos, setVideos, submit, setSubmit, input, setInput }) {
-  const [loadingError, setLoadingError] = useState(false);
+export default function Home({ videos, setVideos, submit, setSubmit, input, setInput, loadingError, setLoadingError }) {
   const key = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
