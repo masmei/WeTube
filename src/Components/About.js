@@ -1,5 +1,6 @@
 import React from 'react';
 import "./About.css";
+import GithubIcon from '../Icons/GithubIcon';
 import Aisha from "./Images/Aisha_Kleemoff.jpeg";
 import Jorge from "./Images/Jorge_Carrera.jpeg";
 import Mason from "./Images/Mason_Mei.jpeg";
@@ -13,12 +14,10 @@ export default function About() {
       <div className="description">
         <h3> Project Description </h3>
         <p>
-          A simple Youtube website clone, where a user can search for a topic,
-          select a video that uses the Youtube API and will open a new page that
-          displays the selected video. User can also view the creators bio and
-          the project description.
+          A Youtube website clone that a user can search for a topic,
+          select a video and be able to watch and comment on their favorite videos via the uses the Youtube API.
         </p>
-      </div>
+      </div> 
       <ul className= "cards">
         <section className='row1'>  
 
@@ -26,7 +25,7 @@ export default function About() {
           <h3>Aisha Kleemoff</h3>
           <img src={Aisha} alt="Aisha" height="300px" />
           <a href="https://github.com/AishaCKleemoff">
-            <i class="devicon-github-original-wordmark colored" id="blue" />
+            <i class="githubIcon" id="icon" />
           </a>
           <p> I'm a React Developer. I enjoy collaborating on projects with other Developers. I'm currently learning the PERN full-stack at the Pursuit Fellowship program located in Long Island City, NY (fully remote now due to the Covid-19 pandemic). I'm looking forward to learning new programming languages.
           </p>
@@ -35,7 +34,7 @@ export default function About() {
           <h3>Jorge Carrera</h3>
           <img src={Jorge} alt="Jorge" height="300px" />
           <a href="https://github.com/Jorge-Carrera">
-            <i class="devicon-github-original-wordmark colored" id="red" />
+            <i class="githubIcon" id="icon" />
           </a>
           <p>
           A developing Full-Stack engineer looking to advance the growth in technology that connects us worldwide. Eager to contribute to the development of Web3, blockchain, and the future of the internet, though only when the football season is over.
@@ -48,7 +47,7 @@ export default function About() {
           <h3>Mason Mei</h3>
           <img src={Mason} alt="Mason" height="300px"/>
           <a href="https://github.com/masmei">
-            <i class="devicon-github-original-wordmark colored" id="purple" />
+            <i class="githubIcon" id="icon"/>
           </a>
           <p>
           I'm a Software Engineer who is passionate in Web3 and Entrepreneurship. I started my tech journey in 2021 due to my obsession with blockchain technology. I want to be a builder in this new age and contribute to the growth and adoption of this new disruptive technology.
@@ -58,7 +57,7 @@ export default function About() {
           <h3>Jahvon DeVine-Jones</h3>
           <img src={Jahvon} alt="Jahvon" height="300px"/>
           <a href="https://github.com/Just-Jayy">
-            <i class="devicon-github-original-wordmark colored" id="purple" />
+            <i class="githubIcon" id="icon" />
           </a>
           <p>
             I'm an fledgling Software Engineer looking to contribute however I can to improve the technology in the world we live in. I want to be able to help those in need and give back to those whow deserve it. Making the world a better place to live in through code!
