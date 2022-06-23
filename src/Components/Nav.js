@@ -14,13 +14,11 @@ export default function Nav({submit, setSubmit, setInput}) {
 
   return( 
     <nav className='nav'>
-      <Link onClick={handleClick}to="/" className="home">
-        <YoutubeIcon/>
-        WeTube</Link>
+      <Link to="/" className="home" onClick={handleClick}> <YoutubeIcon/>WeTube </Link>
 
       <ul>
-        <Link to="/"> <HomeIcon/> </Link>
-        <Link to="/about"> <AboutIcon/> </Link>
+        <Link to="/"> <HomeIcon/>Home </Link>
+        <Link to="/about"> <AboutIcon/>About Us</Link>
       </ul>
     </nav>
   );
